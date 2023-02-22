@@ -29,7 +29,10 @@ function App() {
       <section className='w-1/2 pt-28 font-Inter max-sm:w-full max-sm:pt-20 max-sm:px-6'>
         <h1 className='text-4xl font-bold'>My technologies</h1>
         <section className='w-full flex items-center mt-14 max-sm:flex-col max-sm:items-start'>
-          <form onSubmit={(e) => AddItem(e)} className='flex'>
+          <form
+            onSubmit={(e) => AddItem(e)}
+            className='flex max-sm:flex-col max-sm:items-start max-sm:'
+          >
             <input
               type='text'
               placeholder='Enter new technology...'
@@ -39,7 +42,7 @@ function App() {
             />
             <button
               type='submit'
-              className='border border-rose-500 py-2 px-6 rounded-md ml-4 text-rose-700 bg-rose-300 hover:text-white hover:bg-rose-500 text-lg font-bold transition duration-300'
+              className='border border-rose-500 py-2 px-6 rounded-md ml-4 max-sm:ml-0 max-sm:mt-4 text-rose-700 bg-rose-300 hover:text-white hover:bg-rose-500 text-lg font-bold transition duration-300'
             >
               Add
             </button>
